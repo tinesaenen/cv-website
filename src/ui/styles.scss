@@ -1,0 +1,232 @@
+@import "./vars";
+
+@import url(//db.onlinewebfonts.com/c/4724e6235ecb66e8330a90b545236592?family=Interstate);
+
+@import url(//db.onlinewebfonts.com/c/076a573a702ec65cfb1f69588b89f12a?family=InterstateBold);
+
+@import url(//db.onlinewebfonts.com/c/5d7571268a2cc4dcdd56140df04d77d0?family=InterstateLight);
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.pinkSquareContainer {
+  position: relative;
+}
+
+.pinkSquare1 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: 240px 0px 0px 100px;
+  mix-blend-mode: multiply;
+}
+
+.pinkSquare2 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: -100px 0px 0px -150px;
+  mix-blend-mode: multiply;
+}
+
+.pinkSquare3 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: 80px 0px 0px 100px;
+  mix-blend-mode: multiply;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: interstate;
+  padding-left: $paddingTextLeft;
+  margin: $marginTopBottomDouble;
+  font-size: $h1TextSize;
+}
+
+h2 {
+  font-family: interstate;
+  padding-left: $paddingTextLeft;
+  margin: $marginTopBottomDouble;
+  font-size: $h2TextSize;
+  font-style: italic;
+  text-decoration: underline $pink;
+  text-underline-position: under;
+}
+
+h3 {
+  font-family: interstate;
+  padding-left: $paddingTextLeft;
+  margin: $marginTopBottomDouble;
+  font-size: $h3_p_TextSize;
+  line-height: $pLineHeight;
+}
+
+h4 {
+  font-family: interstate;
+  padding-left: $paddingTextLeft;
+  margin: $marginNone;
+  font-size: $h3_p_TextSize;
+  line-height: $pLineHeight;
+}
+
+h5 {
+  font-family: $fontInterstatelight;
+  padding-left: $paddingTextLeft;
+  margin: $marginNone;
+  font-size: $h3_p_TextSize;
+  line-height: $pLineHeight;
+}
+
+ul {
+  padding: 0px;
+  margin: $marginUl;
+}
+
+li {
+  font-family: $fontInterstatelight;
+  padding-left: $paddingTextLeft;
+  margin: $marginNone;
+  font-size: $h3_p_TextSize;
+  line-height: $pLineHeight;
+  list-style: none;
+}
+
+@import "personalInfo";
+
+.listItemLight {
+  font-family: $fontInterstatelight;
+  padding-left: $paddingTextLeft;
+  margin: $marginNone;
+  font-size: $h3_p_TextSize;
+  line-height: $pLineHeight;
+  list-style: none;
+}
+
+span {
+  font-family: $fontInterstate;
+}
+
+.section {
+  margin: $marginTop;
+}
+
+.hardSkillsContainer {
+  display: flex;
+}
+
+.hardskillSection {
+  margin: $marginBottom;
+}
+
+.hardSkillsSubtitle {
+  margin: $marginBottom;
+}
+
+button {
+  margin: $marginbutton;
+  border: 2px solid $pink;
+  border-radius: 10px;
+  height: 44px;
+  font-family: interstate;
+  font-size: $h3_p_TextSize;
+  color: $pink;
+  background: none;
+}
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  padding-left: $paddingTextLeft;
+}
+
+.socialContainer {
+  display: flex;
+  align-items: center;
+  margin: $marginTop;
+}
+
+/*rangeslider*/
+
+.rangeSliderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangeSlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.rangeSliderBar {
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+}
+
+.rangeSliderHandle {
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 100px;
+  position: absolute;
+}
+
+/*ranges*/
+
+.Position90 {
+  margin-left: 90%;
+}
+
+.Position80 {
+  margin-left: 80%;
+}
+
+.Position70 {
+  margin-left: 70%;
+}
+
+.Position60 {
+  margin-left: 60%;
+}
+
+.Position50 {
+  margin-left: 50%;
+}
+
+.Position40 {
+  margin-left: 40%;
+}
+.Position30 {
+  margin-left: 30%;
+}
+.Position20 {
+  margin-left: 20%;
+}
+
+.Position10 {
+  margin-left: 10%;
+}

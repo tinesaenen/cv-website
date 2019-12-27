@@ -1,0 +1,215 @@
+@import url(//db.onlinewebfonts.com/c/4724e6235ecb66e8330a90b545236592?family=Interstate);
+@import url(//db.onlinewebfonts.com/c/076a573a702ec65cfb1f69588b89f12a?family=InterstateBold);
+@import url(//db.onlinewebfonts.com/c/5d7571268a2cc4dcdd56140df04d77d0?family=InterstateLight);
+html {
+  overflow: hidden;
+  height: 100%; }
+
+body {
+  margin: 0px;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden; }
+
+.pinkSquareContainer {
+  position: relative; }
+
+.pinkSquare1 {
+  background-color: #f4bbbb85;
+  width: 300px;
+  height: 200px;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  position: absolute;
+  margin: 240px 0px 0px 100px;
+  mix-blend-mode: multiply; }
+
+.pinkSquare2 {
+  background-color: #f4bbbb85;
+  width: 300px;
+  height: 200px;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  position: absolute;
+  margin: -100px 0px 0px -150px;
+  mix-blend-mode: multiply; }
+
+.pinkSquare3 {
+  background-color: #f4bbbb85;
+  width: 300px;
+  height: 200px;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  position: absolute;
+  margin: 80px 0px 0px 100px;
+  mix-blend-mode: multiply; }
+
+img {
+  width: 100%; }
+
+h1 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 30px; }
+
+h2 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 25px;
+  font-style: italic;
+  -webkit-text-decoration: underline #f4bbbb;
+          text-decoration: underline #f4bbbb;
+  text-underline-position: under; }
+
+h3 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+h4 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+h5 {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+ul {
+  padding: 0px;
+  margin: 4px 0px 0px 0px; }
+
+li {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  list-style: none; }
+
+.me {
+  margin: 40px 0px 0px 0px; }
+
+@media (min-width: 748px) {
+  .personalInfo {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row; }
+  .me {
+    width: 50%; }
+  .persoonlijkeInfo {
+    width: 50%; } }
+
+.listItemLight {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  list-style: none; }
+
+span {
+  font-family: interstate; }
+
+.section {
+  margin: 10px 0px 0px 0px; }
+
+.hardSkillsContainer {
+  display: -webkit-box;
+  display: flex; }
+
+.hardskillSection {
+  margin: 0px 0px 10px 0px; }
+
+.hardSkillsSubtitle {
+  margin: 0px 0px 10px 0px; }
+
+button {
+  margin: 25px 0px 20px 20px;
+  border: 2px solid #f4bbbb;
+  border-radius: 10px;
+  height: 44px;
+  font-family: interstate;
+  font-size: 16px;
+  color: #f4bbbb;
+  background: none; }
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  padding-left: 20px; }
+
+.socialContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 10px 0px 0px 0px; }
+
+/*rangeslider*/
+.rangeSliderContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+.rangeSlider {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 150px;
+  margin-right: 20px; }
+
+.rangeSliderBar {
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  position: absolute; }
+
+.rangeSliderHandle {
+  width: 15px;
+  height: 15px;
+  background-color: #f4bbbb;
+  border-radius: 100px;
+  position: absolute; }
+
+/*ranges*/
+.Position90 {
+  margin-left: 90%; }
+
+.Position80 {
+  margin-left: 80%; }
+
+.Position70 {
+  margin-left: 70%; }
+
+.Position60 {
+  margin-left: 60%; }
+
+.Position50 {
+  margin-left: 50%; }
+
+.Position40 {
+  margin-left: 40%; }
+
+.Position30 {
+  margin-left: 30%; }
+
+.Position20 {
+  margin-left: 20%; }
+
+.Position10 {
+  margin-left: 10%; }
