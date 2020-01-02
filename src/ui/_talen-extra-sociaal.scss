@@ -1,0 +1,49 @@
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  padding-left: $paddingTextLeft;
+}
+
+.socialContainer {
+  display: flex;
+  align-items: center;
+  margin: $marginTop;
+}
+
+button {
+  margin: $marginbutton;
+  border: 2px solid $pink;
+  border-radius: 10px;
+  height: 44px;
+  width: 150px;
+  font-family: interstate;
+  font-size: $h3_p_TextSize;
+  color: $pink;
+  background: none;
+  outline: none;
+
+  &:hover {
+    background: $pink;
+    color: white;
+  }
+}
+
+//ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .talen-extra-social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px;
+  }
+
+  button {
+    margin: 60px 40vw;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1224px) {
+  button {
+    margin: 40px 0px 40px 45vw;
+  }
+}

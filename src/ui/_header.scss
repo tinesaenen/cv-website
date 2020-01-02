@@ -1,0 +1,60 @@
+.opening-image {
+  width: 100%;
+}
+.pinkSquareContainer {
+  position: relative;
+}
+
+.pinkSquare1 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: 240px 0px 0px 100px;
+  mix-blend-mode: multiply;
+}
+
+//ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  //pinkSquareContainer
+
+  .opening-image {
+    width: 100vw;
+  }
+
+  .pinkSquare1 {
+    width: 700px;
+    height: 500px;
+    margin: 320px 0px 0px 250px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1224px) {
+  .big-title {
+    font-size: 60px;
+    margin-top: 20vh;
+    z-index: 1000;
+  }
+  .opening-image {
+    height: 400px;
+    width: 340px;
+    margin: 300px 0px 0px 900px;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .image-name-container {
+    display: grid;
+    grid-template-columns: 1fr 100fr;
+    height: 100vh;
+  }
+
+  .pinkSquare1 {
+    width: 700px;
+    height: 500px;
+    margin: 100px 0px 0px 400px;
+    z-index: 300;
+  }
+}

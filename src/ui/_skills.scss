@@ -1,0 +1,111 @@
+.hardSkillsContainer {
+  display: flex;
+}
+
+.hardskillSection {
+  margin: $marginBottom;
+}
+
+.hardSkillsSubtitle {
+  margin: $marginBottom;
+}
+
+/*rangeslider*/
+
+.rangeSliderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangeSlider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.rangeSliderBar {
+  width: 150px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+}
+
+.rangeSliderHandle {
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 100px;
+  position: absolute;
+}
+
+/*ranges*/
+
+.Position90 {
+  margin-left: 90%;
+}
+
+.Position80 {
+  margin-left: 80%;
+}
+
+.Position70 {
+  margin-left: 70%;
+}
+
+.Position60 {
+  margin-left: 60%;
+}
+
+.Position50 {
+  margin-left: 50%;
+}
+
+.Position40 {
+  margin-left: 40%;
+}
+.Position30 {
+  margin-left: 30%;
+}
+.Position20 {
+  margin-left: 20%;
+}
+
+.Position10 {
+  margin-left: 10%;
+}
+
+.pinkSquare3 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: 80px 0px 0px 100px;
+  mix-blend-mode: multiply;
+}
+
+//ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hardskill-softskill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px;
+  }
+
+  .pinkSquare3 {
+    width: 400px;
+    height: 300px;
+    margin: 60px 0px 0px 100px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1224px) {
+  .pinkSquare3 {
+    width: 800px;
+    height: 300px;
+    margin: -200px 0px 0px -300px;
+  }
+}

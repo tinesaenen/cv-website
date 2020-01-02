@@ -1,0 +1,41 @@
+.pinkSquare2 {
+  background-color: $pinkSeeTrough;
+  width: 300px;
+  height: 200px;
+  transform: skew(-15deg);
+  position: absolute;
+  margin: -100px 0px 0px -150px;
+  mix-blend-mode: multiply;
+}
+
+.section {
+  margin: $marginTop;
+}
+
+//ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .opleidingen-werkervaring-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1224px) {
+  .desktop-grid-container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0px 0px 25vw;
+  }
+
+  .lijst {
+    padding: 30px 0px 0px 30px;
+  }
+
+  .pinkSquare2 {
+    width: 600px;
+    height: 400px;
+    margin: 0px 0px 0px 900px;
+  }
+}

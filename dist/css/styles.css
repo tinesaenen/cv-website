@@ -1,15 +1,41 @@
 @import url(//db.onlinewebfonts.com/c/4724e6235ecb66e8330a90b545236592?family=Interstate);
 @import url(//db.onlinewebfonts.com/c/076a573a702ec65cfb1f69588b89f12a?family=InterstateBold);
 @import url(//db.onlinewebfonts.com/c/5d7571268a2cc4dcdd56140df04d77d0?family=InterstateLight);
-html {
-  overflow: hidden;
-  height: 100%; }
+.me {
+  margin: 40px 0px 0px 0px;
+  width: 100vw; }
 
-body {
-  margin: 0px;
-  height: 100%;
-  overflow: auto;
-  overflow-x: hidden; }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .personalInfo {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row; }
+  .me {
+    width: 50%; }
+  .persoonlijkeInfo {
+    width: 50%;
+    padding: 30px; } }
+
+@media only screen and (min-width: 1224px) {
+  .onderTitel {
+    font-size: 50px;
+    padding-bottom: 30px; }
+  .me {
+    width: 50vw; }
+  .personalInfo {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row; }
+  .persoonlijkeInfo {
+    width: 50%;
+    padding: 140px; } }
+
+.opening-image {
+  width: 100%; }
 
 .pinkSquareContainer {
   position: relative; }
@@ -24,6 +50,35 @@ body {
   margin: 240px 0px 0px 100px;
   mix-blend-mode: multiply; }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .opening-image {
+    width: 100vw; }
+  .pinkSquare1 {
+    width: 700px;
+    height: 500px;
+    margin: 320px 0px 0px 250px; } }
+
+@media only screen and (min-width: 1224px) {
+  .big-title {
+    font-size: 60px;
+    margin-top: 20vh;
+    z-index: 1000; }
+  .opening-image {
+    height: 400px;
+    width: 340px;
+    margin: 300px 0px 0px 900px;
+    position: absolute;
+    z-index: 100; }
+  .image-name-container {
+    display: grid;
+    grid-template-columns: 1fr 100fr;
+    height: 100vh; }
+  .pinkSquare1 {
+    width: 700px;
+    height: 500px;
+    margin: 100px 0px 0px 400px;
+    z-index: 300; } }
+
 .pinkSquare2 {
   background-color: #f4bbbb85;
   width: 300px;
@@ -34,96 +89,29 @@ body {
   margin: -100px 0px 0px -150px;
   mix-blend-mode: multiply; }
 
-.pinkSquare3 {
-  background-color: #f4bbbb85;
-  width: 300px;
-  height: 200px;
-  -webkit-transform: skew(-15deg);
-          transform: skew(-15deg);
-  position: absolute;
-  margin: 80px 0px 0px 100px;
-  mix-blend-mode: multiply; }
+.section {
+  margin: 10px 0px 0px 0px; }
 
-img {
-  width: 100%; }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .opleidingen-werkervaring-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px; } }
 
-h1 {
-  font-family: interstate;
-  padding-left: 20px;
-  margin: 25px 0px 20px 0px;
-  font-size: 30px; }
-
-h2 {
-  font-family: interstate;
-  padding-left: 20px;
-  margin: 25px 0px 20px 0px;
-  font-size: 25px;
-  font-style: italic;
-  -webkit-text-decoration: underline #f4bbbb;
-          text-decoration: underline #f4bbbb;
-  text-underline-position: under; }
-
-h3 {
-  font-family: interstate;
-  padding-left: 20px;
-  margin: 25px 0px 20px 0px;
-  font-size: 16px;
-  line-height: 1.4; }
-
-h4 {
-  font-family: interstate;
-  padding-left: 20px;
-  margin: 0px 0px 0px 0px;
-  font-size: 16px;
-  line-height: 1.4; }
-
-h5 {
-  font-family: interstatelight;
-  padding-left: 20px;
-  margin: 0px 0px 0px 0px;
-  font-size: 16px;
-  line-height: 1.4; }
-
-ul {
-  padding: 0px;
-  margin: 4px 0px 0px 0px; }
-
-li {
-  font-family: interstatelight;
-  padding-left: 20px;
-  margin: 0px 0px 0px 0px;
-  font-size: 16px;
-  line-height: 1.4;
-  list-style: none; }
-
-.me {
-  margin: 40px 0px 0px 0px; }
-
-@media (min-width: 748px) {
-  .personalInfo {
+@media only screen and (min-width: 1224px) {
+  .desktop-grid-container {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-            flex-flow: row; }
-  .me {
-    width: 50%; }
-  .persoonlijkeInfo {
-    width: 50%; } }
-
-.listItemLight {
-  font-family: interstatelight;
-  padding-left: 20px;
-  margin: 0px 0px 0px 0px;
-  font-size: 16px;
-  line-height: 1.4;
-  list-style: none; }
-
-span {
-  font-family: interstate; }
-
-.section {
-  margin: 10px 0px 0px 0px; }
+            flex-direction: row;
+    margin: 50px 0px 0px 25vw; }
+  .lijst {
+    padding: 30px 0px 0px 30px; }
+  .pinkSquare2 {
+    width: 600px;
+    height: 400px;
+    margin: 0px 0px 0px 900px; } }
 
 .hardSkillsContainer {
   display: -webkit-box;
@@ -134,28 +122,6 @@ span {
 
 .hardSkillsSubtitle {
   margin: 0px 0px 10px 0px; }
-
-button {
-  margin: 25px 0px 20px 20px;
-  border: 2px solid #f4bbbb;
-  border-radius: 10px;
-  height: 44px;
-  font-family: interstate;
-  font-size: 16px;
-  color: #f4bbbb;
-  background: none; }
-
-.socialIcon {
-  width: 25px;
-  height: 25px;
-  padding-left: 20px; }
-
-.socialContainer {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  margin: 10px 0px 0px 0px; }
 
 /*rangeslider*/
 .rangeSliderContainer {
@@ -213,3 +179,138 @@ button {
 
 .Position10 {
   margin-left: 10%; }
+
+.pinkSquare3 {
+  background-color: #f4bbbb85;
+  width: 300px;
+  height: 200px;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  position: absolute;
+  margin: 80px 0px 0px 100px;
+  mix-blend-mode: multiply; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hardskill-softskill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px; }
+  .pinkSquare3 {
+    width: 400px;
+    height: 300px;
+    margin: 60px 0px 0px 100px; } }
+
+@media only screen and (min-width: 1224px) {
+  .pinkSquare3 {
+    width: 800px;
+    height: 300px;
+    margin: -200px 0px 0px -300px; } }
+
+.socialIcon {
+  width: 25px;
+  height: 25px;
+  padding-left: 20px; }
+
+.socialContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 10px 0px 0px 0px; }
+
+button {
+  margin: 25px 0px 20px 20px;
+  border: 2px solid #f4bbbb;
+  border-radius: 10px;
+  height: 44px;
+  width: 150px;
+  font-family: interstate;
+  font-size: 16px;
+  color: #f4bbbb;
+  background: none;
+  outline: none; }
+  button:hover {
+    background: #f4bbbb;
+    color: white; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .talen-extra-social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 0px 30px; }
+  button {
+    margin: 60px 40vw; } }
+
+@media only screen and (min-width: 1224px) {
+  button {
+    margin: 40px 0px 40px 45vw; } }
+
+html {
+  overflow: hidden;
+  height: 100%; }
+
+body {
+  margin: 0px;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden; }
+
+h1 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 2rem; }
+
+h2 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 25px;
+  font-style: italic;
+  -webkit-text-decoration: underline #f4bbbb;
+          text-decoration: underline #f4bbbb;
+  text-underline-position: under; }
+
+h3 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 25px 0px 20px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+h4 {
+  font-family: interstate;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+h5 {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4; }
+
+ul {
+  padding: 0px;
+  margin: 4px 0px 0px 0px; }
+
+li {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  list-style: none; }
+
+.listItemLight {
+  font-family: interstatelight;
+  padding-left: 20px;
+  margin: 0px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 1.4;
+  list-style: none; }
+
+span {
+  font-family: interstate; }

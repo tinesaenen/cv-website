@@ -1,8 +1,11 @@
 .me {
   margin: $marginTopTripple;
+  width: 100vw;
 }
 
-@media (min-width: 748px) {
+//ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  //personal Info
   .personalInfo {
     display: flex;
     flex-flow: row;
@@ -13,5 +16,28 @@
 
   .persoonlijkeInfo {
     width: 50%;
+    padding: 30px;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 1224px) {
+  .onderTitel {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  .me {
+    width: 50vw;
+    // margin: 0px 0px 0px 50vw;
+  }
+
+  .personalInfo {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .persoonlijkeInfo {
+    width: 50%;
+    padding: 140px;
   }
 }
