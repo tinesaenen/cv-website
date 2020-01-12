@@ -16,3 +16,9 @@ $marginUl: 4px 0px 0px 0px;
 
 $pink: #f4bbbb;
 $pinkSeeTrough: #f4bbbb85;
+
+@mixin marginPaddingFontCombi {
+  font-family: $fontInterstatelight;
+  padding-left: $paddingTextLeft;
+  margin: $marginNone;
+}

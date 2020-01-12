@@ -57,9 +57,7 @@ h4 {
 }
 
 h5 {
-  font-family: $fontInterstatelight;
-  padding-left: $paddingTextLeft;
-  margin: $marginNone;
+  @include marginPaddingFontCombi();
   font-size: $h3_p_TextSize;
   line-height: $pLineHeight;
 }
@@ -70,18 +68,14 @@ ul {
 }
 
 li {
-  font-family: $fontInterstatelight;
-  padding-left: $paddingTextLeft;
-  margin: $marginNone;
+  @include marginPaddingFontCombi();
   font-size: $h3_p_TextSize;
   line-height: $pLineHeight;
   list-style: none;
 }
 
 .listItemLight {
-  font-family: $fontInterstatelight;
-  padding-left: $paddingTextLeft;
-  margin: $marginNone;
+  @include marginPaddingFontCombi();
   font-size: $h3_p_TextSize;
   line-height: $pLineHeight;
   list-style: none;
